@@ -40,7 +40,7 @@ def after_request(response):
     response.headers.add('Access-Control-Allow-Origin', 'http://localhost:4200')
     response.headers.add('Access-Control-Allow-Credentials', 'true')
     response.headers.add('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE,OPTIONS')
-    response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
+    response.headers.add('Access-Control-Allow-Headers', 'Content-Type, x-access-token')
     return response
 
 if __name__ == "__main__":
